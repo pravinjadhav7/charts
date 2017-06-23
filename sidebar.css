@@ -1,0 +1,53 @@
+/* define a fixed width for the entire menu */
+
+
+  /* reset our lists to remove bullet points and padding */
+  .mainmenu, .submenu {
+        list-style: none;
+          padding: 0;
+            margin: 0;
+            margin-left: 18px;
+            margin-bottom: 9px;
+                margin-top: 7px;
+        }
+
+        /* make ALL links (main and submenu) have padding and background color */
+        .mainmenu a {
+              display: block;
+                  text-decoration: none;
+                    padding: 0px;
+                      
+                  }
+
+
+
+
+      
+
+.mainmenu li:hover .submenu {
+      display: block;
+        /*max-height: 200px;*/
+        
+    }
+
+    .submenu li:hover{
+          background: #312A2A;
+    }
+
+  /* hover behaviour for links inside .submenu */
+  .submenu a:hover {
+
+		color:#FFFFFF;
+    }
+
+    /* this is the initial state of all submenus.
+     *   we set it to max-height: 0, and hide the overflowed content.
+.submenu {
+      overflow: hidden;
+        max-height: 0;
+          -webkit-transition: all 0.5s ease-out;
+      }
+     *   */
+
+
+
